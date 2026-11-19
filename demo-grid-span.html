@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Span</title>
+    <style>
+        img{
+            width:100%;
+            height:auto;
+            display:block;
+        }
+        .grid{
+            display:grid;
+            grid-template-columns: repeat(auto-fill,200px);
+            gap:48px;
+            justify-content: center;
+        }
+        .big{
+            grid-column: span 3;
+            grid-row:span 3;
+        }
+        .med{
+            grid-column: span 2;
+            grid-row:span 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <img class="big" src="https://picsum.photos/id/237/800/800" alt="demo">
+        <img src="https://picsum.photos/id/232/400/400" alt="demo">
+        <img src="https://picsum.photos/id/233/400/400" alt="demo">
+        <img class="med" src="https://picsum.photos/id/211/400/400" alt="demo">
+        <img class="big" src="https://picsum.photos/id/202/400/400" alt="demo">
+        <img src="https://picsum.photos/id/200/400/400" alt="demo">
+
+    </div>
+</body>
+</html>
