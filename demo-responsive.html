@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo responsive media queries</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        @media (min-width:600px){
+          body{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap:24px;
+          } 
+        }
+ 
+        @media (min-width:900px){
+          body{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap:24px;
+          } 
+        }
+
+        p{
+            color:red;
+        }
+        @media (min-width:600px){
+            p{
+                color:blue;
+            }
+        }
+
+        </style>
+</head>
+<body>
+    <h1>Demo responsive</h1>
+    <p>This is a simple demo of a responsive webpage. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</body>
+</html>
