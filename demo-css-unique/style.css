@@ -1,0 +1,25 @@
+body{
+    background: #000;
+    color:#fff;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.home{
+    background: #ae1818;
+    color:#fff; 
+}
+
+.projet{
+    background: #333;
+    color:#f60;
+}
+
+.projet p{
+    columns: 2;
+}
+
+nav.footer{
+    display:grid;
+    grid-template-columns: auto auto;
+    justify-content:space-between;
+}
