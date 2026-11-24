@@ -15,4 +15,3 @@ https://github.com/workshop-renoir/workshop-renoir.github.io/issues/2
 10. vérifier le favicon + <title>
 11. vérifier la meta description
 12. vérifier la balise lang="fr" sur le html
-

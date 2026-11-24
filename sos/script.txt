@@ -1,0 +1,10 @@
+for f in *; do
+  [ -f "$f" ] || continue
+  new=$(printf '%s' "$f" | perl -CSD -MUnicode::Normalize -pe '$_ = NFD($_); s/\p{Mn}//g; $_ = lc($_); s/ /-/g')
+  [ "$f" = "$new" ] && continue
+  if [ -e "$new" ] && [ "$(stat -f %i "$f")" != "$(stat -f %i "$new")" ]; then
+    echo "Ignoré (existe déjà) : $f -> $new"
+  else
+    mv -- "$f" "$new"
+  fi
+done
