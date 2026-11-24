@@ -1,4 +1,7 @@
 # Après la publication sur github (pages)
+poster ici :
+https://github.com/workshop-renoir/workshop-renoir.github.io/issues/2
+(issues sur le dépôt github workshop renoir)
 
 1. tester sur un autre ordinateur
 2. vérifier les fautes d’orthographes, coquilles, accents sur capitales, guillemets, apostrophe, 2e (et pas 2ème)
